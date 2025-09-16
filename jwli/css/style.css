@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    color: grey;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header ul {
+    display: flex;
+}
+
+button {
+    width: 8%;
+    margin: 0 3% 0 0;
+    color: white;
+    background: hsl(214deg 13% 23%);
+    font-size: medium;
+}
+
+main {
+    width: 100%;
+    height: 480px;
+    background: hsl(218deg 15% 95%);
+    display: flex;
+}
+
+.mLeft {
+    width: 60%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    color: hsl(214deg 13% 23%);
+}
+
+.mLeft img {
+    align-self: center;
+    width: 40%;
+}
+
+main h1 {
+    padding: 3% 0 2% 0;
+}
+
+main h2 {
+    font-size: larger;
+    padding-bottom: 5%;
+    ;
+}
+
+.email {
+    display: flex;
+    margin: 1% 0;
+    height: 40px;
+}
+
+.email input {
+    width: 60%;
+    font-size: large;
+    border-radius: 5%;
+}
+
+input[type="email"]::placeholder {
+    padding-left: 5%;
+}
+
+.email button {
+    width: 30%;
+    margin-left: 5%;
+    color: whitesmoke;
+    background: hsl(207deg 20% 77%);
+    font-size: large;
+    border-radius: 5%;
+}
+
+.mRight {
+    width: 40%;
+}
+
+.white {
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    color: black;
+}
+
+.white h3 {
+    font-size: 2.7rem;
+}
+
+.whitePink {
+    display: grid;
+    grid-template: 40px 1fr / 1fr 10% 1fr;
+    text-align: justify;
+    padding: 5% 4%;
+    font-size: 1.2rem;
+}
+
+.pinkR {
+    grid-column: 3 / 4;
+}
+
+/* .pinkL{
+    grid-row-start: 1;
+    grid-row-end: 2;
+} */
+
+
+.pinkLine {
+    width: 60%;
+    border-bottom: 3px solid pink;
+    margin-bottom: 2%;
+}
+
+.white p {
+    color: grey;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 0 5%;
+}
+
+.history {
+    height: 770px;
+    background: hsl(218deg 15% 95%);
+    display: flex;
+    color: #333333;
+}
+
+.hL {
+    flex: 2;
+    padding: 3%;
+    line-height: 2rem;
+}
+
+.hL h4 {
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+
+.hL p {
+    font-size: 1.5rem;
+}
+
+.hR {
+    flex: 1;
+}
+
+.weAre {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+}
+
+.weAre h4 {
+    font-size: 2rem;
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+}
+
+.founder {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    border: 1px solid lightgrey;
+}
+
+.founder img {
+    height: 400px;
+    width: 100%;
+    padding: 6% 10%;
+}
+
+.founderP {
+    flex: 1;
+}
+
+.fR {
+    flex: 3;
+    padding: 2% 3% 2% 0;
+    line-height: 2rem;
+}
+
+.fR h6 {
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+}
+
+.fR p {
+    font-size: 1.5rem;
+}
+
+.foundation {
+    height: 400px;
+    padding: 0 2.5%;
+    display: flex;
+    margin: auto;
+    color: #333333;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.fish {
+    padding-right: 2.5%;
+}
+
+h5 {
+    color: grey;
+    font-size: 1.5rem;
+    padding-bottom: 3%;
+}
+
+.simmons h5 {
+    text-decoration: underline;
+}
+
+aside {
+    height: 80px;
+    color: white;
+    background: hsl(206deg 21% 77%);
+    display: flex;
+    align-items: center;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding-left: 2.5%;
+}
+
+aside span {
+    font-size: 1.8rem;
+}
+
+.email button {
+    background: hsl(199deg 10% 60%);
+}
+
+/* footer {
+    height: 300px;
+    color: white;
+    background: hsl(199deg 10% 60%);
+} */
+
+
+@media (max-width: 1400px) {
+    .hR{
+        display: none;
+    }
+}
+
+@media (max-width: 1270px) {
+    .foundation p{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1180px) {
+    .foundation p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .boston, .founderP{
+        display: none;
+    }
+    .foundation p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .white p, h4, aside{
+        display: none;
+    }
+
+   .history p, .fR p{
+    font-size: 1.2rem;
+   }
+}
+
+@media (max-width: 800px) {
+    .foundation{
+        display: none;
+    }
+
+@media (max-width: 670px) {
+
+   .history p, .fR p{
+    font-size: 1rem;
+   }
+}
